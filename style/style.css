@@ -1,0 +1,699 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner/Commissioner-Regular.woff2") format("woff2"), url("/fonts/Commissioner/Commissioner-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Commissioner";
+  src: url("/fonts/Commissioner-Bold.woff2") format("woff2"), url("/fonts/Commissioner-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Druk";
+  src: url("/fonts/Druk/DrukWideCyr-Bold.woff") format("woff"), url("/fonts/Druk/DrukWideCyr-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@media screen and (min-width: 1980px) {
+  .main__mobile__swiper {
+    display: none;
+  }
+}
+@media screen and (max-width: 1980px) {
+  .main__mobile__swiper {
+    display: none;
+  }
+}
+@media screen and (max-width: 296px) {
+  .main__mobile__swiper {
+    display: block;
+  }
+}
+h1 {
+  color: #202020;
+  font-family: "Druk";
+}
+
+.tags {
+  font-family: "Druk";
+  font-size: 12px;
+  padding: 10px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #efefef;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.tags:hover {
+  background-color: black;
+  color: white;
+}
+
+.indetificator {
+  font-size: 30px;
+  color: red;
+  font-weight: 800;
+}
+
+.main {
+  margin-bottom: 35px;
+}
+@media screen and (max-width: 296px) {
+  .main {
+    display: none;
+  }
+}
+
+.swiper-wrapper {
+  margin: 10px 0;
+}
+
+.swiper-container {
+  overflow: hidden !important;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-image {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.swiper-text {
+  font-family: "Druk";
+  font-size: 80px;
+  color: white;
+  text-align: left;
+  margin: 0;
+  top: 250px;
+  margin-left: 10px;
+  position: absolute;
+}
+@media screen and (max-width: 1920px) {
+  .swiper-text {
+    top: 500px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  .swiper-text {
+    top: 400px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .swiper-text {
+    top: 300px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .swiper-text {
+    top: 150px;
+    font-size: 64px;
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  top: 10px;
+  right: 10px;
+  margin: 0;
+}
+@media screen and (max-width: 296px) {
+  .swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.swiper-pagination-horizontal {
+  width: 98% !important;
+  margin: 0 auto !important;
+}
+
+.swiper-pagination-bullet {
+  width: 33.3% !important;
+  border-radius: 15px !important;
+  height: 24px !important;
+  line-height: 30px;
+  font-family: "Druk" !important;
+  font-size: 12px;
+  color: #000;
+  text-align: left;
+  padding: 5px 0 10px 10px;
+  margin: 0 auto 15px 0 !important;
+  opacity: 3 !important;
+  background: white !important;
+}
+
+.swiper-pagination-bullet-active {
+  color: #fff;
+  background: #f36722 !important;
+}
+
+.main__mobile__swiper .indetificator {
+  font-size: 15px;
+}
+.main__mobile__swiper .swiper-text {
+  font-size: 26px;
+  top: 210px;
+}
+.main__mobile__swiper .swiper-pagination-bullets {
+  padding-bottom: 20px;
+}
+.main__mobile__swiper .swiper-pagination-bullet {
+  width: 90% !important;
+  margin: 0 !important;
+}
+.main__mobile__swiper .swiper-pagination-bullet:hover {
+  background-image: url("../img/white_arrow.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right 5% top 50% !important;
+}
+
+body {
+  margin: 10px;
+  background-color: #ececec;
+}
+body .header {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+}
+body .header__burger {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  height: 10px;
+  width: 15px;
+}
+body .header__burger::after, body .header__burger::before, body .header__burger--position {
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+body .header__burger::after {
+  content: "";
+  bottom: 0;
+}
+body .header__burger::before {
+  content: "";
+  top: 0;
+}
+body .header__burger--position {
+  top: 4px;
+}
+body .header__links {
+  font-family: "Druk";
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body .header__links .link {
+  text-decoration: none;
+  color: black;
+}
+body .header__content {
+  gap: 35px;
+  display: flex;
+}
+@media screen and (max-width: 296px) {
+  body .header__content {
+    display: none;
+  }
+}
+body .header__info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 296px) {
+  body .header__info {
+    display: none;
+  }
+}
+body .header__menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+body .header__title {
+  font-family: "Druk";
+  font-weight: 400;
+  margin: 0;
+  font-size: 14px;
+}
+body .header__profile {
+  display: flex;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  background-color: #efefef;
+  border-radius: 20px;
+  padding: 0 0 0 10px;
+  gap: 10px;
+}
+body .header__icon {
+  border-radius: 10px;
+}
+body .header__name {
+  margin: 0 auto;
+  font-family: "Druk";
+  font-weight: 700;
+  font-size: 14px;
+}
+body .header .mobile__header {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+}
+body .header .mobile__header .header__icon {
+  border-radius: 30px;
+}
+@media screen and (min-width: 1920px) {
+  body .header .mobile__header {
+    display: none;
+  }
+}
+@media screen and (min-width: 1400px) {
+  body .header .mobile__header {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .header .mobile__header {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .header .mobile__header {
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .header .mobile__header {
+    display: flex;
+  }
+}
+body .fraction__text {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: "Druk";
+}
+body .fraction__text h1 {
+  font-size: 80px;
+}
+body .fraction__text h2 {
+  font-size: 20px;
+}
+body .fraction__text--colorOrange {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #f36722;
+}
+body .fraction__text--colorOrange:hover {
+  background-image: url("../img/right_arrow_orange.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .fraction__text--colorGreen {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  color: green;
+}
+@media screen and (max-width: 296px) {
+  body .fraction__text h1 {
+    font-size: 26px;
+  }
+  body .fraction__text h2 {
+    font-size: 14px;
+  }
+}
+body .main__cards {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+body .main__cards .main__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 700px;
+  overflow: hidden;
+  width: 32.5%;
+  position: relative;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: white;
+}
+body .main__cards .main__card__title {
+  font-family: "Druk";
+  font-size: 32px;
+}
+body .main__cards .main__card__text {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+body .main__cards .main__card:hover {
+  background: #202020;
+  color: white;
+}
+body .main__cards .main__card:hover h1 {
+  color: white;
+}
+body .main__cards .main__card__image {
+  position: absolute;
+  bottom: 250px;
+  left: -85px;
+}
+body .main__cards .main__card__image--position {
+  left: 0;
+}
+@media screen and (max-width: 1920px) {
+  body .main__cards .main__card__image--position {
+    left: 160px !important;
+  }
+}
+@media screen and (max-width: 1440px) {
+  body .main__cards .main__card__image--position {
+    left: 100px !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .main__cards .main__card__image--position {
+    left: 30px !important;
+  }
+}
+@media screen and (max-width: 1920px) {
+  body .main__cards .main__card__image {
+    left: 5px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body .main__cards .main__card__image {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  body .main__cards .main__card__image {
+    left: -70px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  body .main__cards .main__card__image {
+    left: -130px;
+  }
+}
+@media screen and (max-width: 296px) {
+  body .main__cards .main__card__image {
+    top: 0px;
+    left: -35px;
+    width: 377px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 296px) {
+  body .main__cards .main__card {
+    height: 446px;
+    width: 86.5%;
+  }
+  body .main__cards .main__card h1 {
+    font-size: 20px;
+  }
+  body .main__cards .main__card p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 296px) {
+  body .main__cards {
+    flex-direction: column;
+  }
+}
+body .main__studies {
+  background-color: white;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 40px 0;
+}
+body .main__studies__news {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+body .main__studies__news__cards {
+  gap: 10px;
+  border-right: 1px solid #c4c4c4;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 1440px) {
+  body .main__studies__news__cards {
+    width: 600px;
+  }
+}
+@media screen and (max-width: 296px) {
+  body .main__studies__news__cards {
+    width: 100%;
+    border: none;
+  }
+  body .main__studies__news__cards h1 {
+    font-size: 20px;
+  }
+  body .main__studies__news__cards .tags {
+    font-size: 10px;
+  }
+}
+body .main__studies__news__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main__studies__news__content__card {
+  border-top: 1px solid #c4c4c4;
+  padding: 10px;
+  gap: 10px;
+  flex-direction: column;
+  display: flex;
+}
+body .main__studies__news__content__card .tags__termins {
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main__studies__news__content__card .info img {
+  border-radius: 10px;
+}
+body .main__studies__news__content__card .info .info__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .main__studies__news__content__card .info--position {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+@media screen and (max-width: 1440px) {
+  body .main__studies__news__content__card .info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body .main__studies__news__content__card p {
+  color: #202020;
+  font-size: 16px;
+  font-family: "Druk";
+}
+body .main__studies__news__content__card h1 {
+  font-size: 20px;
+}
+body .main__studies__news__content__card .section__arrow {
+  display: flex;
+  gap: 10px;
+}
+body .main__studies__news__content__card .section__arrow h1 {
+  color: #2e8d43;
+}
+body .main__studies__news__content__card--border {
+  border: none;
+}
+@media screen and (max-width: 296px) {
+  body .main__studies__news__content {
+    display: none;
+  }
+}
+body .main__studies__card {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+}
+body .main__studies__card h1 {
+  color: white;
+}
+body .main__studies__card--backgroundImage {
+  height: 611px;
+  background-image: url("../img/1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 296px) {
+  body .main__studies__card--backgroundImage {
+    background-image: url("../img/1-mobile.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+body .main__studies__card--backgroundColor {
+  gap: 10px;
+  display: flex;
+  background: #2e8d43;
+}
+body .main__studies__card--backgroundColor .spans {
+  flex-wrap: wrap;
+  width: 700px;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+@media screen and (max-width: 296px) {
+  body .main__studies__card--backgroundColor .spans {
+    margin-top: 100px;
+    width: 218px;
+  }
+}
+body footer {
+  background-image: url("../img/ball-footer.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom -80px right 0px;
+  padding: 30px 30px 30px 30px;
+  border-top: 1px solid #202020;
+  display: flex;
+}
+body footer h1 {
+  font-size: 48;
+}
+body footer .footer__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body footer .footer__info p {
+  font-size: 12px;
+  font-family: "Druk";
+}
+@media screen and (max-width: 296px) {
+  body footer .footer__info p {
+    font-size: 10px;
+  }
+}
+body footer .footer__info a {
+  text-decoration: none;
+  color: #202020;
+}
+body footer .footer__info__store {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+@media screen and (max-width: 296px) {
+  body footer .footer__info__store {
+    display: flex;
+    flex-direction: column;
+  }
+}
+body footer .footer__info .appstore {
+  gap: 10px;
+  display: flex;
+}
+body footer .footer__info .googleplay {
+  gap: 10px;
+  display: flex;
+}
+body footer .footer__info__signature {
+  margin-top: 50px;
+}
+body footer .footer__qrcode__card {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 30px;
+}
+body footer .footer__qrcode__card h1 {
+  text-align: center;
+  font-size: 14px;
+}
+body footer .footer__qrcode__card p {
+  font-family: "Inter";
+  font-size: 16px;
+  color: #747474;
+}
+@media screen and (max-width: 296px) {
+  body footer .footer__qrcode__card {
+    display: none;
+  }
+}
+@media screen and (max-width: 296px) {
+  body footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url("../img/ball-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: right 150px;
+  }
+  body footer a {
+    font-size: 10px;
+  }
+  body footer h1 {
+    font-size: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

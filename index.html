@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>XPage</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <img class="header__image" src="./img/xpage.png" alt="logo" />
+        <div class="header__links">
+          <a class="link" href="play">ИГРАТЬ</a>
+          <a class="link" href="look">СМОТРЕТЬ</a>
+          <a class="link" href="study">УЧИТЬСЯ</a>
+          <a class="link" href="events">МЕРОПРИЯТИЯ</a>
+        </div>
+      </div>
+      <div class="header__info">
+        <div class="header__menu">
+          <label class="header__burger">
+            <span class="header__burger--position"></span>
+          </label>
+          <h1 class="header__title">МЕНЮ</h1>
+        </div>
+        <div class="header__profile">
+          <p class="header__name">ГЕННАДИЙ П.</p>
+          <img class="header__icon" src="./img/photo.png" alt="photo" />
+        </div>
+      </div>
+      <header class="mobile__header">
+        <label class="header__burger">
+          <span class="header__burger--position"></span>
+        </label>
+        <img class="header__image" src="./img/hpage-mobile.png" alt="logo" />
+        <img class="header__icon" src="./img/photo.png" alt="photo" />
+      </header>
+    </header>
+
+    <main class="main">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/3.webp" alt="img1" />
+            <p class="swiper-text">НАЙДИ С КЕМ ПОИГРАТЬ В БАСКЕТ</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/2.webp" alt="img2" />
+            <p class="swiper-text">какой-то текст</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/1.webp" alt="img3" />
+            <p class="swiper-text">
+              и ещё один какой-то текст
+              <span class="indetificator"> возьмите на работу :D</span>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+    <main class="main__mobile__swiper">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/3-mobile.webp" alt="img1" />
+            <p class="swiper-text">НАЙДИ С КЕМ ПОИГРАТЬ В БАСКЕТ</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/2-mobile.webp" alt="img2" />
+            <p class="swiper-text">какой-то текст</p>
+          </div>
+          <div class="swiper-slide">
+            <img class="swiper-image" src="./img/1-mobile.webp" alt="img3" />
+            <p class="swiper-text">
+              и ещё один какой-то текст
+              <span class="indetificator"> возьмите на работу :D</span>
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </main>
+    <div class="fraction__text fraction__text--colorOrange">
+      <h1>ИГРАЙ</h1>
+      <h2>В РАЗДЕЛ</h2>
+    </div>
+    <main class="main__cards">
+      <div class="main__card">
+        <img
+          class="main__card__image"
+          src="./img/men_kids.png"
+          alt="men_kids"
+        />
+        <h1 class="main__card__title">НАЙДИ СЕБЕ КОМАНДУ</h1>
+        <p class="main__card__text">
+          Игры на районе - это возможность найти с кем поиграть в баскетбол в
+          выходные, или создать свою игру и пригласить других игроков
+          присоединиться.
+        </p>
+      </div>
+      <div class="main__card">
+        <img
+          class="main__card__image main__card__image--position"
+          src="./img/ball_basket.png"
+          alt="ball"
+        />
+        <h1 class="main__card__title">СОЗДАВАЙ КОМАНДЫ</h1>
+        <p class="main__card__text">
+          Игры на районе - это возможность найти с кем поиграть в баскетбол в
+          выходные, или создать свою игру и пригласить других игроков
+          присоединиться.
+        </p>
+      </div>
+      <div class="main__card">
+        <img
+          class="main__card__image"
+          src="./img/men_final.png"
+          alt="men_final"
+        />
+        <h1 class="main__card__title">УЧАСТВУЙ В ТУРНИРАХ</h1>
+        <p class="main__card__text">
+          Участвуйте в турнирах вместе с вашей командой. Будьте активными,
+          побеждайте и получайте ачивки и призы от наших спонсоров.
+        </p>
+      </div>
+    </main>
+    <main class="main__studies">
+      <div class="fraction__text fraction__text--colorGreen">
+        <h1>ИГРАЙ</h1>
+        <h2>В РАЗДЕЛ</h2>
+      </div>
+      <div class="main__studies__news">
+        <div class="main__studies__news__cards">
+          <div class="main__studies__card main__studies__card--backgroundImage">
+            <h1>МЫ СОБРАЛИ СЕКЦИИ ДЛЯ ДЕТЕЙ ПО ВСЕМУ ГОРОДУ</h1>
+            <span class="tags">12 СЕКЦИЙ ПО ВСЕМУ ГОРОДУ</span>
+          </div>
+          <div class="main__studies__card main__studies__card--backgroundColor">
+            <h1>ПОДБЕРИ ТРЕНЕРА ПОД СВОЙ УРОВЕНЬ</h1>
+            <div class="spans">
+              <span class="tags">ДЕТСКАЯ ТРЕНИРОВКА</span>
+              <span class="tags">ДЛЯ НАЧИНАЮЩИХ</span>
+              <span class="tags">СТРИТБОЛ</span>
+              <span class="tags">ВЫЕЗД ТРЕНЕРА НА ДОМ</span>
+              <span class="tags">12 ФИЛЬТРОВ</span>
+            </div>
+          </div>
+        </div>
+        <div class="main__studies__news__content">
+          <div
+            class="main__studies__news__content__card main__studies__news__content__card--border"
+          >
+            <h1>ВИДЕОУРОКИ</h1>
+            <div class="info">
+              <img src="./img/Eugeny_Voronov.png" alt="Eugeny_Voronov" />
+              <div class="info__text">
+                <p>
+                  Евгений Воронов: «Бронзовые медали - оценка труда нашей
+                  команды»
+                </p>
+                <div class="info__text__date tags">26 октября</div>
+              </div>
+            </div>
+          </div>
+          <div class="main__studies__news__content__card">
+            <div class="section__arrow">
+              <h1>СТАТЬИ</h1>
+              <img src="./img/right_arrow_green.svg" alt="arrow green" />
+            </div>
+            <div class="info--position">
+              <p>
+                Евгений Воронов: «Бронзовые медали - оценка труда нашей команды»
+              </p>
+              <div class="info__text__date tags">26 октября</div>
+            </div>
+          </div>
+          <div class="main__studies__news__content__card">
+            <h1>ТЕРМИНЫ</h1>
+            <div class="tags__termins">
+              <span class="tags">ТРЕХА</span>
+              <span class="tags">ТРЕХОЧКОВЫЙ БРОСОК</span>
+              <span class="tags">38 ТЕРМИНОВ</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__info">
+        <div class="footer__info__text">
+          <h1>
+            ЕЩЕ БОЛЬШЕ ПОЛЕЗНЫХ МАТЕРИАЛОВ И ВИДЕОУРОКОВ В НАШЕМ ПРИЛОЖЕНИИ
+          </h1>
+          <div class="footer__info__store">
+            <div class="appstore">
+              <img src="./img/apple.svg" alt="appstore" />
+              <div class="footer__info__text">
+                <a href="#">Download on the</a>
+                <p>App Store</p>
+              </div>
+            </div>
+            <div class="googleplay">
+              <img src="./img/googleplay.svg" alt="googleplay" />
+              <div class="footer__info__text">
+                <a href="#">Get it on</a>
+                <p>Google Play</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__info__signature">СДЕЛАНО В XPAGE by MOLODOGVARDEEC</p>
+      </div>
+
+      <div class="footer__qrcode">
+        <div class="footer__qrcode__card">
+          <img src="./img/qrcode.png" alt="qrcode" />
+          <p>iOS / Android</p>
+          <h1>НАВЕДИТЕ КАМЕРУ УСТРОЙСТВА НА QR-КОД, ЧТОБЫ СКАЧАТЬ</h1>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let menu = ["ИГРАЙ", "УЧИСЬ", "СМОТРИ"];
+      let mySwiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          renderBullet: function (index, className) {
+            return '<span class="' + className + '">' + menu[index] + "</span>";
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
