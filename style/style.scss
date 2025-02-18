@@ -139,6 +139,10 @@ h1 {
     top: 220px;
     font-size: 60px;
   }
+  @media screen and (max-width: 828px) {
+    top: 80px;
+    font-size: 50px;
+  }
 }
 
 .swiper-pagination {
@@ -154,10 +158,16 @@ h1 {
     flex-direction: column;
     align-items: center;
   }
+  @media screen and (max-width: 828px) {
+    flex-direction: column;
+  }
 }
 .swiper-pagination-horizontal {
   width: 98% !important;
   margin: 0 auto !important;
+  @media screen and (max-width: 828px) {
+    padding-bottom: 20px;
+  }
 }
 .swiper-pagination-bullet {
   width: 33.3% !important;
@@ -172,10 +182,21 @@ h1 {
   margin: 0 auto 15px 0 !important;
   opacity: 3 !important;
   background: white !important;
+  @media screen and (max-width: 828px) {
+    width: 98% !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+  }
 }
 .swiper-pagination-bullet-active {
   color: #fff;
   background: #f36722 !important;
+  @media screen and (max-width: 828px) {
+    background-image: url("../img/white_arrow.svg") !important;
+    background-repeat: no-repeat !important;
+    background-size: 3% !important;
+    background-position: right 5% top 50% !important;
+  }
 }
 
 .main__mobile__swiper {
@@ -257,12 +278,18 @@ body {
       @media screen and (max-width: 296px) {
         display: none;
       }
+      @media screen and (max-width: 828px) {
+        display: none;
+      }
     }
     &__info {
       display: flex;
       align-items: center;
       gap: 20px;
       @media screen and (max-width: 296px) {
+        display: none;
+      }
+      @media screen and (max-width: 828px) {
         display: none;
       }
     }
@@ -333,6 +360,12 @@ body {
         display: flex;
       }
     }
+    @media screen and (max-width: 828px) {
+    }
+    .mobile__header {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
 
   .fraction__text {
@@ -359,7 +392,6 @@ body {
     }
     &--colorGreen {
       display: flex;
-
       justify-content: space-between;
       gap: 5px;
       color: green;
@@ -371,6 +403,9 @@ body {
       h2 {
         font-size: 14px;
       }
+    }
+    @media screen and (max-width: 828px) {
+      align-items: flex-end;
     }
   }
   .main__cards {
@@ -444,14 +479,23 @@ body {
         }
       }
       @media screen and (max-width: 296px) {
+        height: 446px;
+        width: 86.5% !important;
         h1 {
           font-size: 20px;
         }
         p {
           font-size: 14px;
         }
-        height: 446px;
-        width: 86.5%;
+      }
+
+      @media screen and (max-width: 828px) {
+        h1 {
+          font-size: 24px;
+        }
+        p {
+          font-size: 15px;
+        }
       }
     }
     @media screen and (max-width: 296px) {
@@ -486,6 +530,9 @@ body {
           .tags {
             font-size: 10px;
           }
+        }
+        @media screen and (max-width: 828px) {
+          width: 100%;
         }
       }
       &__content {
@@ -580,6 +627,9 @@ body {
           @media screen and (max-width: 296px) {
             margin-top: 100px;
             width: 218px;
+          }
+          @media screen and (max-width: 828px) {
+            width: 100%;
           }
         }
       }
