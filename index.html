@@ -12,7 +12,7 @@
     <title>XPage</title>
   </head>
   <body>
-    <header class="header">
+    <section class="header">
       <div class="header__content">
         <img class="header__image" src="./img/xpage.png" alt="logo" />
         <div class="header__links">
@@ -34,16 +34,16 @@
           <img class="header__icon" src="./img/photo.png" alt="photo" />
         </div>
       </div>
-      <header class="mobile__header">
+      <section class="mobile__header">
         <label class="header__burger">
           <span class="header__burger--position"></span>
         </label>
         <img class="header__image" src="./img/hpage-mobile.png" alt="logo" />
         <img class="header__icon" src="./img/photo.png" alt="photo" />
-      </header>
-    </header>
+      </section>
+    </section>
 
-    <main class="main">
+    <section class="main">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -66,8 +66,8 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </main>
-    <main class="main__mobile__swiper">
+    </section>
+    <section class="main__mobile__swiper">
       <div class="swiper-container">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -90,12 +90,12 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </main>
+    </section>
     <div class="fraction__text fraction__text--colorOrange">
       <h1>ИГРАЙ</h1>
       <h2>В РАЗДЕЛ</h2>
     </div>
-    <main class="main__cards">
+    <section class="main__cards">
       <div class="main__card">
         <img
           class="main__card__image"
@@ -134,8 +134,8 @@
           побеждайте и получайте ачивки и призы от наших спонсоров.
         </p>
       </div>
-    </main>
-    <main class="main__studies">
+    </section>
+    <section class="main__studies">
       <div class="fraction__text fraction__text--colorGreen">
         <h1>ИГРАЙ</h1>
         <h2>В РАЗДЕЛ</h2>
@@ -195,8 +195,8 @@
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer">
+    </section>
+    <section class="footer">
       <div class="footer__info">
         <div class="footer__info__text">
           <h1>
@@ -229,11 +229,11 @@
           <h1>НАВЕДИТЕ КАМЕРУ УСТРОЙСТВА НА QR-КОД, ЧТОБЫ СКАЧАТЬ</h1>
         </div>
       </div>
-    </footer>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-      let menu = ["ИГРАЙ", "УЧИСЬ", "СМОТРИ"];
-      let mySwiper = new Swiper(".swiper-container", {
+      const menu = ["ИГРАЙ", "УЧИСЬ", "СМОТРИ"];
+      const mySwiper = new Swiper(".swiper-container", {
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
