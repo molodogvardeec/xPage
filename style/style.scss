@@ -41,7 +41,7 @@
   }
 }
 
-@media screen and (max-width: 296px) {
+@media screen and (max-width: 320px) {
   .main__mobile__swiper {
     display: block;
   }
@@ -73,7 +73,7 @@ h1 {
 
 .main {
   margin-bottom: 35px;
-  @media screen and (max-width: 296px) {
+  @media screen and (max-width: 320px) {
     display: none;
   }
 }
@@ -153,7 +153,7 @@ h1 {
   top: 10px;
   right: 10px;
   margin: 0;
-  @media screen and (max-width: 296px) {
+  @media screen and (max-width: 320px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -275,7 +275,7 @@ body {
     &__content {
       gap: 35px;
       display: flex;
-      @media screen and (max-width: 296px) {
+      @media screen and (max-width: 320px) {
         display: none;
       }
       @media screen and (max-width: 828px) {
@@ -286,7 +286,7 @@ body {
       display: flex;
       align-items: center;
       gap: 20px;
-      @media screen and (max-width: 296px) {
+      @media screen and (max-width: 320px) {
         display: none;
       }
       @media screen and (max-width: 828px) {
@@ -384,11 +384,6 @@ body {
       align-items: center;
       gap: 5px;
       color: #f36722;
-      &:hover {
-        background-image: url("../img/right_arrow_orange.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
     &--colorGreen {
       display: flex;
@@ -396,7 +391,7 @@ body {
       gap: 5px;
       color: green;
     }
-    @media screen and (max-width: 296px) {
+    @media screen and (max-width: 320px) {
       h1 {
         font-size: 26px;
       }
@@ -471,14 +466,14 @@ body {
         @media screen and (max-width: 1024px) {
           left: -130px;
         }
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           top: 0px;
           left: -35px;
           width: 377px;
           height: 250px;
         }
       }
-      @media screen and (max-width: 296px) {
+      @media screen and (max-width: 320px) {
         height: 446px;
         width: 86.5% !important;
         h1 {
@@ -498,7 +493,7 @@ body {
         }
       }
     }
-    @media screen and (max-width: 296px) {
+    @media screen and (max-width: 320px) {
       flex-direction: column;
     }
   }
@@ -521,7 +516,7 @@ body {
         @media screen and (max-width: 1440px) {
           width: 600px;
         }
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           width: 100%;
           border: none;
           h1 {
@@ -589,7 +584,7 @@ body {
             border: none;
           }
         }
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           display: none;
         }
       }
@@ -608,7 +603,7 @@ body {
         background-image: url("../img/1.webp");
         background-repeat: no-repeat;
         background-size: cover;
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           background-image: url("../img/1-mobile.webp");
           background-repeat: no-repeat;
           background-size: cover;
@@ -624,7 +619,7 @@ body {
           align-items: center;
           display: flex;
           gap: 5px;
-          @media screen and (max-width: 296px) {
+          @media screen and (max-width: 320px) {
             margin-top: 100px;
             width: 218px;
           }
@@ -653,7 +648,7 @@ body {
       p {
         font-size: 12px;
         font-family: "Druk";
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           font-size: 10px;
         }
       }
@@ -665,7 +660,7 @@ body {
         margin-top: 10px;
         display: flex;
         gap: 15px;
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           display: flex;
           flex-direction: column;
         }
@@ -701,12 +696,12 @@ body {
           font-size: 16px;
           color: #747474;
         }
-        @media screen and (max-width: 296px) {
+        @media screen and (max-width: 320px) {
           display: none;
         }
       }
     }
-    @media screen and (max-width: 296px) {
+    @media screen and (max-width: 320px) {
       display: flex;
       flex-direction: column;
       a {
@@ -722,4 +717,12 @@ body {
       background-position: right 150px;
     }
   }
+}
+
+.swiper-button-prev {
+  display: none !important;
+}
+
+.swiper-button-next {
+  display: none !important;
 }
