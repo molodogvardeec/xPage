@@ -135,6 +135,10 @@ h1 {
     top: 150px;
     font-size: 64px;
   }
+  @media screen and (max-width: 1200px) {
+    top: 220px;
+    font-size: 60px;
+  }
 }
 
 .swiper-pagination {
@@ -566,7 +570,7 @@ body {
       &--backgroundColor {
         gap: 10px;
         display: flex;
-
+        background: #2e8d43;
         .spans {
           flex-wrap: wrap;
           width: 700px;
@@ -578,7 +582,6 @@ body {
             width: 218px;
           }
         }
-        background: #2e8d43;
       }
     }
   }
